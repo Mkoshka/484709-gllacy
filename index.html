@@ -1,3 +1,7 @@
+<!-- ФОРМА ПОИСКА (как правильно прописывать наведение, отдельным блоком (как? подробнее))
+      КОРЗИНА (как добавляются товары?)
+      ПРОВЕРИТЬ КАРТУ-->
+      
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -18,16 +22,23 @@
           <li><a href="company.html">О компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="search">Поиск</li>
+          <li class="search">
+            <label for="search">Поиск</label>
+            <input id="search" type="search" name="search" placeholder="Что ищем?" autofocus>
+            <!-- что из этого правильно??
+              и вставлять блоки наведения, а так же формы для входа и строка поиска именно в хедер или в конце кода?
+            -->
+          </li>
           <li class="login-link">Вход</li>
           <li class="basket">Корзина</li>
+          <!-- как добавляются товары? -->
         </ul>
         <div class="contact">
           <p>С 10 до 20, ежедневно<br>
             8 812 450 -25-25
           </p>
         </div>
-        <!--Движок-->
+        <!--Движок 4 раздел-->
         <section class="logo">
           <h2>Крем-брюле и пломбир с малиновым джемом</h2>
           <a href="#">Давайте оба!</a>
@@ -131,10 +142,9 @@
           <img src="#" width="111" height="24" alt="Карта">
           <h2 class="visually-hidden">Как до нас добраться</h2>
           <span class="modal-close">x</span>
-          гугл карты и взять ссылку
-          нужное место, поделиться, хтмл код, вставить
         </section>
       -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6075186691412!2d30.32057505162717!3d59.93865456897045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb68fc1a7%3A0x115ed5f4e61ee84!2sKiton!5e0!3m2!1sru!2sli!4v1503786201535" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       <div>
         <h3 class="visually-hidden">Контактная информация</h3>
         <p>Адрес главного офиса и офлайн магазина:<br>

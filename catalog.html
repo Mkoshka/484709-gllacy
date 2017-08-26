@@ -1,8 +1,11 @@
+<!-- Быстрый просмотр это переход на новую страницу или выскакиевающее окно на странице?
+-->
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Глейси</title>
+    <title>HTML Academy: Глейси</title>
   </head>
   <body>
     <header class="main-header">
@@ -40,16 +43,14 @@
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Сортировка:</legend>
-            <!--<select name="theme">
-              <option value="light">Светлая тема</option>
-              <option value="dark">Тёмная тема</option>
+            <select name="sort">
+              <option value="popularity">по популярности</option>
+              <option value=""></option>
             </select>
-            -->
           </fieldset>
           <fieldset>
-            <legend>Жирность:</legend>
-            <p>Цена: 100р-500р</p>
-            <!--Движок-->
+            <label for="price">Цена: 100 руб. -500 руб.</label>
+            <input id="price" type="range" min="100" max="500" step="">
           </fieldset>
           <fieldset>
             <legend>Жирность:</legend>
@@ -104,152 +105,116 @@
         <h2 class="visually-hidden">Мороженое</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <p class="catalog-item-image">
             <a href="catalog-item.html">
               <img src="img/product-1.jpg" width="220" height="165" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             </a>
-            </p>
-            <p class="catalog-item-price">
-              <b>310₽</b>
+            <b>310₽</b>
               <span class="kg">/кг</span>
-            </p>
+            </b>
             <a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой </a>
           </li>
           <li class="catalog-item">
-            <p class="catalog-item-image">
             <a href="catalog-item.html">
               <img src="img/product-2.jpg" width="220" height="165" alt="Сливочно-кофейное с кусочками шоколада">
             </a>
-            </p>
-            <p class="catalog-item-price">
-              <b>380₽</b>
+            <b>380₽
               <span class="kg">/кг</span>
-            </p>
-              <a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада</a>
+            </b>
+            <a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада</a>
           </li>
           <li class="catalog-item">
-            <p class="catalog-item-image">
             <a href="catalog-item.html">
               <img src="img/product-3.jpg" width="220" height="165" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             </a>
-            </p>
-            <p class="catalog-item-price">
-              <b>355₽</b>
+            <b>355₽
               <span class="kg">/кг</span>
                 <!--Это появляющееся окно на данной странице или ссылка на другую?
                   <a title="" href="#">
                   </a>
                 -->
               <button class="strawberry button" type="submit">Быстрый просмотр</button>
-            </p>
+            </b>
             <a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </li>
           <li class="catalog-item">
-            <p class="catalog-item-image">
             <a href="catalog-item.html">
               <img src="img/product-4.jpg" width="220" height="165" alt="Сливочное крем-брюле с карамельной подливкой">
             </a>
-            </p>
-            <p class="catalog-item-price">
-              <b>415₽</b>
+            <b>415₽
               <span class="kg">/кг</span>
-            </p>
+            </b>
             <a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a>
           </li>
           <li class="catalog-item">
-            <p class="catalog-item-image">
             <a href="catalog-item.html">
               <img src="img/product-4.jpg" width="220" height="165" alt="Сливочное с брусничным джемом">
             </a>
-            </p>
-            <p class="catalog-item-price">
-              <b>325₽</b>
+            <b>325₽
               <span class="kg">/кг</span>
-            </p>
+            </b>
             <a href="catalog-item.html">Сливочное с брусничным джемом</a>
           </li>
           <li class="catalog-item">
-            <p class="catalog-item-image">
             <a href="catalog-item.html">
               <img src="img/product-4.jpg" width="220" height="165" alt="Сливочно-черничное с цельными ягодами черники">
             </a>
-            </p>
-            <p class="catalog-item-price">
-              <b>410₽</b>
+            <b>410₽
               <span class="kg">/кг</span>
-            </p>
+            </b>
             <a href="catalog-item.html">Сливочно-черничное с цельными ягодами черники</a>
           </li>
           <li class="catalog-item">
-            <p class="catalog-item-image">
             <a href="catalog-item.html">
               <img src="img/product-4.jpg" width="220" height="165" alt="Сливочно-лимонное с карамельной присыпкой">
             </a>
-            </p>
-            <p class="catalog-item-price">
-              <b>375₽</b>
+            <b>375₽
               <span class="kg">/кг</span>
-            </p>
+            </b>
             <a href="catalog-item.html">Сливочно-лимонное с карамельной присыпкой</a>
           </li>
           <li class="catalog-item">
-            <p class="catalog-item-image">
             <a href="catalog-item.html">
               <img src="img/product-4.jpg" width="220" height="165" alt="Сливочное с шоколадной стружкой">
             </a>
-            </p>
-            <p class="catalog-item-price">
-              <b>320₽</b>
+            <b>320₽
               <span class="kg">/кг</span>
-            </p>
+            </b>
             <a href="catalog-item.html">Сливочное с шоколадной стружкой</a>
           </li>
           <li class="catalog-item">
-            <p class="catalog-item-image">
             <a href="catalog-item.html">
               <img src="img/product-4.jpg" width="220" height="165" alt="Сливочно-ванильное с кусочками шоколада">
             </a>
-            </p>
-            <p class="catalog-item-price">
-              <b>440₽</b>
+            <b>440₽
               <span class="kg">/кг</span>
-            </p>
+            </b>
             <a href="catalog-item.html">Сливочно-ванильное с кусочками шоколада</a>
           </li>
           <li class="catalog-item">
-            <p class="catalog-item-image">
             <a href="catalog-item.html">
               <img src="img/product-4.jpg" width="220" height="165" alt="Сливочное с ментоловым сиропом">
             </a>
-            </p>
-            <p class="catalog-item-price">
-              <b>435₽</b>
+            <b>435₽
               <span class="kg">/кг</span>
-            </p>
+            </b>
             <a href="catalog-item.html">Сливочное с ментоловым сиропом</a>
           </li>
           <li class="catalog-item">
-            <p class="catalog-item-image">
             <a href="catalog-item.html">
               <img src="img/product-4.jpg" width="220" height="165" alt="Сливочное с кусочками черного шоколада">
             </a>
-            </p>
-            <p class="catalog-item-price">
-              <b>355₽</b>
+            <b>355₽
               <span class="kg">/кг</span>
-            </p>
+            </b>
             <a href="catalog-item.html">Сливочное с кусочками черного шоколада</a>
           </li>
           <li class="catalog-item">
-            <p class="catalog-item-image">
             <a href="catalog-item.html">
               <img src="img/product-4.jpg" width="220" height="165" alt="Сливочное с мятным сиропом">
             </a>
-            </p>
-            <p class="catalog-item-price">
-              <b>420₽</b>
+            <b>420₽
               <span class="kg">/кг</span>
-            </p>
+            </b>
             <a href="catalog-item.html">Сливочное с мятным сиропом</a>
           </li>
         </ul>
