@@ -1,7 +1,7 @@
 <!-- ФОРМА ПОИСКА (как правильно прописывать наведение, отдельным блоком (как? подробнее))
       КОРЗИНА (как добавляются товары?)
       ПРОВЕРИТЬ КАРТУ-->
-      
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -136,16 +136,13 @@
           <button class="button" type="submit">Отправить</button>
         </form>
         </section>
-      <section class="contacts">
-      <!--Как вставить карту??
-        <section class="modal modal-map">
-          <img src="#" width="111" height="24" alt="Карта">
-          <h2 class="visually-hidden">Как до нас добраться</h2>
-          <span class="modal-close">x</span>
-        </section>
-      -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6075186691412!2d30.32057505162717!3d59.93865456897045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb68fc1a7%3A0x115ed5f4e61ee84!2sKiton!5e0!3m2!1sru!2sli!4v1503786201535" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-      <div>
+      <section class="modal modal-map">
+        <p>
+          <img scr="#" widht="" height="" alt="Ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </p>
+        <iframe      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6075186691412!2d30.32057505162717!3d59.93865456897045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb68fc1a7%3A0x115ed5f4e61ee84!2sKiton!5e0!3m2!1sru!2sli!4v1503786201535" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+        </iframe>
+        <div>
         <h3 class="visually-hidden">Контактная информация</h3>
         <p>Адрес главного офиса и офлайн магазина:<br>
           Ул. Большая Конюшенная 19/8, Санкт-Петербург
@@ -154,7 +151,7 @@
           8 812 450-25-25<br>
           (с 10 до 20 ежедневно)
         </p>
-        <button class="button" type="submit">Форма обратной свзяи</button>
+        <button class="button" type="submit">Форма обратной связи</button>
       </div>
       </section>
     </main>
@@ -182,19 +179,24 @@
       <p>Введите свой логин и пароль.</p>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <input class="login-icon-user" type="text" name="login" placeholder="Логин">
+          <label class="visually-holder" for="login">Логин</label>
+          <input id="login" class="login-icon-user" type="text" name="login" placeholder="Логин">
         </p>
         <p>
-          <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+          <label class="visually-holder" for="password">Пароль</label>
+          <input id="password" class="login-icon-password" type="password" name="password" placeholder="Пароль">
         </p>
         <p class="login-password-info">
-          <input type="checkbox" name="remember" class="visually-hidden">
-          Запомните меня
+          <label class="login-checkbox">
+            <input type="checkbox" name="remember" class="visually-hidden">
+            <span class="checkbox-indicator"></span>
+            Запомните меня
+          </label>
           <a class="restore" href="#">Я забыл пароль!</a>
         </p>
         <button class="button" type="submit">Войти</button>
       </form>
-      <span class="modal-close">x</span>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
