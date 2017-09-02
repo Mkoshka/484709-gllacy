@@ -1,20 +1,18 @@
-<!-- ФОРМА ПОИСКА (как правильно прописывать наведение, отдельным блоком (как? подробнее))
-      КОРЗИНА (как добавляются товары?)
-      ПРОВЕРИТЬ КАРТУ-->
 
 <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <img src="img/logo.png" width="100" height="50" alt="Глейси">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="img/logo.svg" width="111" height="24" alt="Логотип «Глейси»">
+          <img src="img/logo.svg" width=" " height=" " alt="Логотип «Глейси»">
         </a>
         <ul class="site-navigation">
           <li><a href="catalog.html">Каталог</a></li>
@@ -24,44 +22,66 @@
         <ul class="user-navigation">
           <li class="search">
             <label for="search">Поиск</label>
-            <input id="search" type="search" name="search" placeholder="Что ищем?" autofocus>
-            <!-- что из этого правильно??
-              и вставлять блоки наведения, а так же формы для входа и строка поиска именно в хедер или в конце кода?????
-              Чтобы при наведении открывался блок
-            -->
+            <input class="search visually-hidden" id="search" type="search" name="search" placeholder="Что ищем?" autofocus>
           </li>
           <li class="login-link">Вход</li>
           <li class="basket">Корзина</li>
-          <!-- как добавляются товары? -->
         </ul>
         <div class="contact">
           <p>С 10 до 20, ежедневно<br>
             8 812 450 -25-25
           </p>
         </div>
-        <!--Переключатель фона-->
         <section class="logo">
-          <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-          <a href="#">Давайте оба!</a> <!-- Ссылка в корзину или в каталог?-->
+          <h2>Крем-брюле и пломбир<br>
+             с малиновым джемом</h2>
+          <a class="slide-btn" href="catalog.html">Давайте оба!</a>
         </section>
+        <ul class="slide-switches">
+          <li class="slide-radio">
+            <button class="slide-button">
+              Первый слайд
+            </button>
+          </li>
+          <li class="slide-radio">
+            <button class="slide-button">
+              Второй слайд
+            </button>
+          </li>
+          <li class="slide-radio">
+            <button class="slide-button">
+              Третий слайд
+            </button>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="container">
-      <h1 class="visually-hidden">GllacyShop</h1>
-      <section class="share">
-        <ul class="share-list">
-          <li class="share-item">
-            <h3>Малинка даром!</h3>
-            <p>При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a href="#">Хочу варенье!</a><!-- Ссылка в корзину или в каталог?-->
-          </li>
-          <li class="share-item">
-            <h3>Шоколадки даром!</h3>
-            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-            <a href="#">Хочу шоколадки!</a><!-- Ссылка в корзину или в каталог?-->
-          </li>
-        </ul>
-      </section>
+      <div class="raspberry-block">
+        <section class="share">
+          <h1 class="visually-hidden">Акция</h1>
+          <ul class="share-list">
+            <li class="share-item raspberry">
+              <h3>Малинка даром!</h3>
+              <p>При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+              <a class="button" href="catalog.html">Хочу варенье!</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="chocolates-block">
+        <section class="share">
+          <h1 class="visually-hidden">Акция</h1>
+          <ul class="share-list">
+            <li class="share-item chocolates">
+              <h3>Шоколадки даром!</h3>
+              <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+              <a  class="button" href="catalog.html">Хочу шоколадки!</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="catalog-block">
       <section class="catalog">
         <h2 class="visually-hidden">Мороженое</h2>
         <ul class="catalog-list">
@@ -72,7 +92,7 @@
             <b>310₽
               <span class="kg">/кг</span>
             </b>
-            <a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой </a> <!-- Ссылка в каталог, оформление заказа, быстрый просмотр??-->
+            <a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой </a>
           </li>
           <li class="catalog-item">
             <a href="catalog-item.html">
@@ -108,17 +128,17 @@
         <p>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженного собственного производства на развес</p>
         <ul class="features-list">
           <li class="features-item">
-            <!--Иконка, не проще ее вставить картинкой свг непосредственно тут, нежели в css прописывать?ы-->
-            Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий
+            <!--Иконка, задать для каждого класс, .класс { background-image: пусть через css в img к svg}-->
+            <p class="ice-cream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий </p>
           </li>
           <li class="features-item">
-            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья
+            <p class="eco">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья</p>
           </li>
           <li class="features-item">
-            <p>Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество</p>
+            <p class="cow">Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество</p>
           </li>
           <li class="features-item">
-            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус</p>
+            <p class="thermometer">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус</p>
           </li>
         </ul>
       </section>
@@ -160,18 +180,18 @@
     <footer class="main-footer">
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="https://twitter.com/">Твиттер</a></li>
+          <li><a class="social-button" href="https://www.instagram.com/">Инстаграм</a></li>
+          <li><a class="social-button" href="https://www.facebook.com/">Фейсбук</a></li>
+          <li><a class="social-button" href="https://vk.com/">Вконтакте</a></li>
         </ul>
       </div>
-      <div>
-        <ul class="footer-navigation">
-          <li><a href="#">Для поставщиков</a></li>
-          <li><a href="#">О производстве</a></li>
-          <li><a href="#">Наши документы</a></li>
-          <li><a href="#">Экологические стандарты</a></li>
+      <div class="footer-navigation">
+        <ul>
+          <li><a href="for-supplier.html">Для поставщиков</a></li>
+          <li><a href="production.html">О производстве</a></li>
+          <li><a href="documentation.html">Наши документы</a></li>
+          <li><a href="eco standards.html">Экологические стандарты</a></li>
         </ul>
       </div>
       <p class="footer-copyright">

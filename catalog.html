@@ -2,7 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>Gllacy</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -12,13 +15,6 @@
         </a>
         <ul class="site-navigation">
           <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
-            <ul class="new-items">
-              <h3>Новинки</h3>
-              <li><a href="#">Сливочное</a></li>
-              <li><a href="#">Щербеты</a></li>
-              <li><a href="#">Фруктовый лед</a></li>
-              <li><a href="#">Мелорин</a></li>
-            </ul>
           <li><a href="checkout.html">Доставка и оплата</a></li>
           <li><a href="company.html">О компании</a></li>
         </ul>
@@ -53,31 +49,28 @@
             </select>
           </fieldset>
           <fieldset>
-            <label for="price">Цена: 100 руб. -500 руб.</label>
+            <legend>Цена: 100 руб. -500 руб.</legend>
+            <label class="visually-hidden" for="price">Цена: 100 руб. -500 руб.</label>
             <input id="price" type="range" min="100" max="500" step="">
           </fieldset>
           <fieldset>
             <legend>Жирность:</legend>
             <ul>
               <li class="filter-option">
-                <label class="visually-hidden">0%</label>
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="0">
-                0%
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="0" id="0">
+                <label for="0">0%</label>
               </li>
               <li class="filter-option">
-                <label class="visually-hidden">до 10%</label>
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="below-10" checked>
-                до 10%
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="below-10" id="below-10" checked>
+                <label for="below-10">до 10%</label>
               </li>
               <li class="filter-option">
-                <label class="visually-hidden">до 30%</label>
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="below-30">
-                до 30%
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="below-30" id="below-30">
+                <label for="below-30">до 30%</label>
               </li>
               <li class="filter-option">
-                <label class="visually-hidden">выше 30%</label>
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="above-30">
-                выше 30%
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="above-30" id="above-30">
+                <label for="above-30">выше 30%</label>
               </li>
             </ul>
           </fieldset>
@@ -85,29 +78,24 @@
             <legend>Наполнители:</legend>
             <ul>
               <li class="filter-option">
-                <label class="visually-hidden">шоколадные</label>
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" checked>
-                шоколадные
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" id="chocolate" checked>
+                <label for="chocolate">шоколадные</label>
               </li>
               <li class="filter-option">
-                <label class="visually-hidden">сахарные присыпки</label>
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sweetener" checked>
-                сахарные присыпки
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
+                <label for="sweetener">сахарные присыпки</label>
               </li>
               <li class="filter-option">
-                <label class="visually-hidden">фрукты</label>
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fruit">
-                фрукты
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fruit" id="fruit">
+                <label for="fruit">фрукты</label>
               </li>
               <li class="filter-option">
-                <label class="visually-hidden">сиропы</label>
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="syrup" >
-                сиропы
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="syrup" id="syrup">
+                <label for="syrup">сиропы</label>
               </li>
               <li class="filter-option">
-                <label class="visually-hidden">джемы</label>
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jam">
-                джемы
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jam" id="jam">
+                <label for="jam">джемы</label>
               </li>
             </ul>
           </fieldset>
@@ -141,10 +129,6 @@
             </a>
             <b>355₽
               <span class="kg">/кг</span>
-                <!--Это появляющееся окно на данной странице или ссылка на другую?
-                  <a title="" href="#">
-                  </a>
-                -->
               <button class="strawberry button" type="submit">Быстрый просмотр</button>
             </b>
             <a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
@@ -223,7 +207,7 @@
           </li>
           <li class="catalog-item">
             <a href="catalog-item.html">
-              <img src="img/12.png" width="267" height="267" alt="Сливочное с мятным сиропом">Сливочное с мятным сиропом
+              <img src="img/12.png" width="267" height="267" alt="Сливочное с мятным сиропом">
             </a>
             <b>420₽
               <span class="kg">/кг</span>
@@ -265,24 +249,19 @@
       <p>Введите свой логин и пароль.</p>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label class="visually-holder" for="login">Логин</label>
-          <input id="login" class="login-icon-user" type="text" name="login" placeholder="Логин">
+          <input class="login-icon-user" type="text" name="login" placeholder="Логин">
         </p>
         <p>
-          <label class="visually-holder" for="password">Пароль</label>
-          <input id="password" class="login-icon-password" type="password" name="password" placeholder="Пароль">
+          <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
         </p>
         <p class="login-password-info">
-          <label class="login-checkbox">
-            <input type="checkbox" name="remember" class="visually-hidden">
-            <span class="checkbox-indicator"></span>
-            Запомните меня
-          </label>
+          <input type="checkbox" name="remember" class="visually-hidden">
+          Запомните меня
           <a class="restore" href="#">Я забыл пароль!</a>
         </p>
         <button class="button" type="submit">Войти</button>
       </form>
-      <button class="modal-close" type="button">Закрыть</button>
+      <span class="modal-close">x</span>
     </section>
   </body>
 </html>
