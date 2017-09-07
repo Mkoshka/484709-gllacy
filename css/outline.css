@@ -1,0 +1,14 @@
+/* ----- Сеточные стили ----- */
+
+html,
+body {
+  min-width: 1122px;
+  min-height: 1750px;
+}
+
+body {
+  /* Временно для сетки */
+  background-image: url("../img/gllacy-index-1200.jpg");
+  background-size: 1372px auto;
+  background-repeat: no-repeat;
+}
